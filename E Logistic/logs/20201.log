@@ -1,0 +1,135 @@
+Tue Jan 14 2020 08:35:07 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"invalid signature"}
+ === End Your session has been expired! ===
+
+Tue Jan 14 2020 08:35:07 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"invalid signature"}
+ === End Your session has been expired! ===
+
+Tue Jan 14 2020 09:08:25 GMT+0700 (Indochina Time)
+ === Error while get zone by project. === 
+ {"name":"SequelizeConnectionError","parent":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"},"original":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"}}
+ === End Error while get zone by project. ===
+
+Tue Jan 14 2020 09:08:25 GMT+0700 (Indochina Time)
+ === Error while get last update stock. === 
+ {"name":"SequelizeConnectionError","parent":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"},"original":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"}}
+ === End Error while get last update stock. ===
+
+Tue Jan 14 2020 09:38:52 GMT+0700 (Indochina Time)
+ === Error while get history order. === 
+ {"name":"SequelizeDatabaseError","parent":{"message":"Column 'e_logistic.dbo.tr_order.description' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.","code":"EREQUEST","number":8120,"state":1,"class":16,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"SELECT a.id, a.order_no, a.created_by, FORMAT(a.created_date,'dd MMMM yyyy') created_date, a.no_reservasi, b.project_name, c.zone_name, d.area_name, a.order_status, 0 panel_state, count(e.id) count_print, COALESCE(appr.created_by,'-') approve_by, COALESCE(FORMAT(appr.created_date,'dd MMMM yyyy'),'-') approve_date, COALESCE(dlvr.created_by,'-') hand_over_by, COALESCE(FORMAT(dlvr.created_date,'dd MMMM yyyy'),'-') hand_over_date, '' pick_up_by, COALESCE(FORMAT(dlvr.created_date,'dd MMMM yyyy'),'-') pick_up_date, a.description FROM [e_logistic].[dbo].[tr_order] a INNER JOIN [e_logistic].[dbo].[project] b on a.project_id = b.id INNER JOIN [e_logistic].[dbo].[zone] c on a.zone_id = c.id INNER JOIN [e_logistic].[dbo].[area] d on a.area_id = d.id LEFT JOIN [e_logistic].[dbo].[tr_history_print] e on a.id = e.order_id LEFT JOIN [e_logistic].[dbo].[prosess_history] appr on a.id = appr.order_id and appr.status_id in (2,6) LEFT JOIN [e_logistic].[dbo].[tr_delivery] dlvr on a.id = dlvr.tr_order_id WHERE a.id IN (SELECT order_id FROM prosess_history WHERE created_by = @0) AND CONVERT(varchar,a.order_date,23) >= @1 AND CONVERT(varchar,a.order_date,23) <= @2 GROUP BY a.id, a.order_no, a.created_by, FORMAT(a.created_date,'dd MMMM yyyy'), a.no_reservasi, b.project_name, c.zone_name, d.area_name, a.order_status,appr.created_by, dlvr.created_by,FORMAT(appr.created_date,'dd MMMM yyyy'),FORMAT(dlvr.created_date,'dd MMMM yyyy') ORDER BY a.created_by desc;","parameters":{"0":"lutfiar","1":"2020-01-14","2":"2020-01-14"}},"original":{"message":"Column 'e_logistic.dbo.tr_order.description' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.","code":"EREQUEST","number":8120,"state":1,"class":16,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"SELECT a.id, a.order_no, a.created_by, FORMAT(a.created_date,'dd MMMM yyyy') created_date, a.no_reservasi, b.project_name, c.zone_name, d.area_name, a.order_status, 0 panel_state, count(e.id) count_print, COALESCE(appr.created_by,'-') approve_by, COALESCE(FORMAT(appr.created_date,'dd MMMM yyyy'),'-') approve_date, COALESCE(dlvr.created_by,'-') hand_over_by, COALESCE(FORMAT(dlvr.created_date,'dd MMMM yyyy'),'-') hand_over_date, '' pick_up_by, COALESCE(FORMAT(dlvr.created_date,'dd MMMM yyyy'),'-') pick_up_date, a.description FROM [e_logistic].[dbo].[tr_order] a INNER JOIN [e_logistic].[dbo].[project] b on a.project_id = b.id INNER JOIN [e_logistic].[dbo].[zone] c on a.zone_id = c.id INNER JOIN [e_logistic].[dbo].[area] d on a.area_id = d.id LEFT JOIN [e_logistic].[dbo].[tr_history_print] e on a.id = e.order_id LEFT JOIN [e_logistic].[dbo].[prosess_history] appr on a.id = appr.order_id and appr.status_id in (2,6) LEFT JOIN [e_logistic].[dbo].[tr_delivery] dlvr on a.id = dlvr.tr_order_id WHERE a.id IN (SELECT order_id FROM prosess_history WHERE created_by = @0) AND CONVERT(varchar,a.order_date,23) >= @1 AND CONVERT(varchar,a.order_date,23) <= @2 GROUP BY a.id, a.order_no, a.created_by, FORMAT(a.created_date,'dd MMMM yyyy'), a.no_reservasi, b.project_name, c.zone_name, d.area_name, a.order_status,appr.created_by, dlvr.created_by,FORMAT(appr.created_date,'dd MMMM yyyy'),FORMAT(dlvr.created_date,'dd MMMM yyyy') ORDER BY a.created_by desc;","parameters":{"0":"lutfiar","1":"2020-01-14","2":"2020-01-14"}},"sql":"SELECT a.id, a.order_no, a.created_by, FORMAT(a.created_date,'dd MMMM yyyy') created_date, a.no_reservasi, b.project_name, c.zone_name, d.area_name, a.order_status, 0 panel_state, count(e.id) count_print, COALESCE(appr.created_by,'-') approve_by, COALESCE(FORMAT(appr.created_date,'dd MMMM yyyy'),'-') approve_date, COALESCE(dlvr.created_by,'-') hand_over_by, COALESCE(FORMAT(dlvr.created_date,'dd MMMM yyyy'),'-') hand_over_date, '' pick_up_by, COALESCE(FORMAT(dlvr.created_date,'dd MMMM yyyy'),'-') pick_up_date, a.description FROM [e_logistic].[dbo].[tr_order] a INNER JOIN [e_logistic].[dbo].[project] b on a.project_id = b.id INNER JOIN [e_logistic].[dbo].[zone] c on a.zone_id = c.id INNER JOIN [e_logistic].[dbo].[area] d on a.area_id = d.id LEFT JOIN [e_logistic].[dbo].[tr_history_print] e on a.id = e.order_id LEFT JOIN [e_logistic].[dbo].[prosess_history] appr on a.id = appr.order_id and appr.status_id in (2,6) LEFT JOIN [e_logistic].[dbo].[tr_delivery] dlvr on a.id = dlvr.tr_order_id WHERE a.id IN (SELECT order_id FROM prosess_history WHERE created_by = @0) AND CONVERT(varchar,a.order_date,23) >= @1 AND CONVERT(varchar,a.order_date,23) <= @2 GROUP BY a.id, a.order_no, a.created_by, FORMAT(a.created_date,'dd MMMM yyyy'), a.no_reservasi, b.project_name, c.zone_name, d.area_name, a.order_status,appr.created_by, dlvr.created_by,FORMAT(appr.created_date,'dd MMMM yyyy'),FORMAT(dlvr.created_date,'dd MMMM yyyy') ORDER BY a.created_by desc;","parameters":{"0":"lutfiar","1":"2020-01-14","2":"2020-01-14"}}
+ === End Error while get history order. ===
+
+Tue Jan 14 2020 14:00:05 GMT+0700 (Indochina Time)
+ === Error while get Report Material Recieve. === 
+ {}
+ === End Error while get Report Material Recieve. ===
+
+Tue Jan 14 2020 14:01:54 GMT+0700 (Indochina Time)
+ === Error while get Report Material Recieve. === 
+ {}
+ === End Error while get Report Material Recieve. ===
+
+Tue Jan 14 2020 14:03:12 GMT+0700 (Indochina Time)
+ === Error while get Report Material Recieve. === 
+ {}
+ === End Error while get Report Material Recieve. ===
+
+Tue Jan 14 2020 14:03:29 GMT+0700 (Indochina Time)
+ === Error while get Report Material Recieve. === 
+ {}
+ === End Error while get Report Material Recieve. ===
+
+Tue Jan 14 2020 14:04:40 GMT+0700 (Indochina Time)
+ === Error while get Report Material Recieve. === 
+ {}
+ === End Error while get Report Material Recieve. ===
+
+Tue Jan 14 2020 14:15:11 GMT+0700 (Indochina Time)
+ === Error while get Report Material Recieve. === 
+ {"name":"SequelizeDatabaseError","parent":{"message":"Incorrect syntax near '.'.","code":"EREQUEST","number":102,"state":1,"class":15,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"SELECTtdr.order_no OrderNo,p.project_name Project,z.zone_name Zona,a.area_name Area,tdr.created_by Requestor,tdr.description Description,m.material_desc MaterialName,tdrd.quantity QuantityOrder,tdlvd.quantity Quantity,trod.recieve_note RecieveNote,tdlvd.delivery_by DeliveryBy,trod.created_date DeliveryDate,trod.updated_date RecieveDateFROM tr_order tdrINNER JOIN tr_order_d tdrd ON tdr.id = tdrd.tr_order_idINNER JOIN tr_delivery_d tdlvd ON tdrd.id = tdlvd.tr_order_d_idINNER JOIN tr_recieve_order_d trod ON trod.tr_delivery_d_id = tdlvd.idINNER JOIN project p ON tdr.project_id = p.idINNER JOIN zone z ON tdr.zone_id = z.idINNER JOIN area a ON tdr.area_id = a.idINNER JOIN material m ON tdrd.material_code = m.material_codeWHERE trod.status = 2AND CONVERT(varchar,trod.updated_date,23) BETWEEN @0 AND @1 AND p.plant_code = @2;","parameters":{"0":"2020-01-01","1":"2020-01-14","2":"KI01"}},"original":{"message":"Incorrect syntax near '.'.","code":"EREQUEST","number":102,"state":1,"class":15,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"SELECTtdr.order_no OrderNo,p.project_name Project,z.zone_name Zona,a.area_name Area,tdr.created_by Requestor,tdr.description Description,m.material_desc MaterialName,tdrd.quantity QuantityOrder,tdlvd.quantity Quantity,trod.recieve_note RecieveNote,tdlvd.delivery_by DeliveryBy,trod.created_date DeliveryDate,trod.updated_date RecieveDateFROM tr_order tdrINNER JOIN tr_order_d tdrd ON tdr.id = tdrd.tr_order_idINNER JOIN tr_delivery_d tdlvd ON tdrd.id = tdlvd.tr_order_d_idINNER JOIN tr_recieve_order_d trod ON trod.tr_delivery_d_id = tdlvd.idINNER JOIN project p ON tdr.project_id = p.idINNER JOIN zone z ON tdr.zone_id = z.idINNER JOIN area a ON tdr.area_id = a.idINNER JOIN material m ON tdrd.material_code = m.material_codeWHERE trod.status = 2AND CONVERT(varchar,trod.updated_date,23) BETWEEN @0 AND @1 AND p.plant_code = @2;","parameters":{"0":"2020-01-01","1":"2020-01-14","2":"KI01"}},"sql":"SELECTtdr.order_no OrderNo,p.project_name Project,z.zone_name Zona,a.area_name Area,tdr.created_by Requestor,tdr.description Description,m.material_desc MaterialName,tdrd.quantity QuantityOrder,tdlvd.quantity Quantity,trod.recieve_note RecieveNote,tdlvd.delivery_by DeliveryBy,trod.created_date DeliveryDate,trod.updated_date RecieveDateFROM tr_order tdrINNER JOIN tr_order_d tdrd ON tdr.id = tdrd.tr_order_idINNER JOIN tr_delivery_d tdlvd ON tdrd.id = tdlvd.tr_order_d_idINNER JOIN tr_recieve_order_d trod ON trod.tr_delivery_d_id = tdlvd.idINNER JOIN project p ON tdr.project_id = p.idINNER JOIN zone z ON tdr.zone_id = z.idINNER JOIN area a ON tdr.area_id = a.idINNER JOIN material m ON tdrd.material_code = m.material_codeWHERE trod.status = 2AND CONVERT(varchar,trod.updated_date,23) BETWEEN @0 AND @1 AND p.plant_code = @2;","parameters":{"0":"2020-01-01","1":"2020-01-14","2":"KI01"}}
+ === End Error while get Report Material Recieve. ===
+
+Tue Jan 14 2020 16:04:00 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-01-14T08:21:41.000Z"}
+ === End Your session has been expired! ===
+
+Tue Jan 14 2020 16:04:00 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2020-01-14T08:21:41.000Z"}
+ === End Your session has been expired! ===
+
+Tue Jan 14 2020 16:20:19 GMT+0700 (Indochina Time)
+ === Your order has been declined, because your previous order has not been received === 
+ []
+ === End Your order has been declined, because your previous order has not been received ===
+
+Tue Jan 14 2020 16:20:24 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Tue Jan 14 2020 16:20:24 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 10:05:23 GMT+0700 (Indochina Time)
+ === Error while get zone by project. === 
+ {"name":"SequelizeConnectionError","parent":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"},"original":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"}}
+ === End Error while get zone by project. ===
+
+Wed Jan 15 2020 10:05:23 GMT+0700 (Indochina Time)
+ === Error while get last update stock. === 
+ {"name":"SequelizeConnectionError","parent":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"},"original":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"}}
+ === End Error while get last update stock. ===
+
+Wed Jan 15 2020 11:28:15 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:28:15 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:29:19 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:32:37 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:33:43 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:36:18 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:42:25 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 11:45:49 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Wed Jan 15 2020 16:35:36 GMT+0700 (Indochina Time)
+ === Your order has been declined, because your previous order has not been received === 
+ []
+ === End Your order has been declined, because your previous order has not been received ===
+

@@ -1,0 +1,45 @@
+Mon Dec 23 2019 10:11:30 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Mon Dec 23 2019 13:14:42 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Mon Dec 23 2019 13:14:42 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"JsonWebTokenError","message":"jwt must be provided"}
+ === End Your session has been expired! ===
+
+Mon Dec 23 2019 14:24:50 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2019-12-23T07:13:16.000Z"}
+ === End Your session has been expired! ===
+
+Mon Dec 23 2019 14:24:50 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2019-12-23T07:13:16.000Z"}
+ === End Your session has been expired! ===
+
+Mon Dec 23 2019 16:46:51 GMT+0700 (Indochina Time)
+ === Error while get location order by project. === 
+ {"name":"SequelizeDatabaseError","parent":{"message":"Error converting data type nvarchar to bigint.","code":"EREQUEST","number":8114,"state":5,"class":16,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"SELECT DISTINCT storage_location_desc FROM [e_logistic].[dbo].[tr_order_d] where tr_order_id = @0;","parameters":{"0":"undefined"}},"original":{"message":"Error converting data type nvarchar to bigint.","code":"EREQUEST","number":8114,"state":5,"class":16,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"SELECT DISTINCT storage_location_desc FROM [e_logistic].[dbo].[tr_order_d] where tr_order_id = @0;","parameters":{"0":"undefined"}},"sql":"SELECT DISTINCT storage_location_desc FROM [e_logistic].[dbo].[tr_order_d] where tr_order_id = @0;","parameters":{"0":"undefined"}}
+ === End Error while get location order by project. ===
+
+Fri Dec 27 2019 09:10:24 GMT+0700 (Indochina Time)
+ === Your session has been expired! === 
+ {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2019-12-26T12:01:28.000Z"}
+ === End Your session has been expired! ===
+
+Fri Dec 27 2019 13:56:22 GMT+0700 (Indochina Time)
+ === Error while get material has not been sent! === 
+ {}
+ === End Error while get material has not been sent! ===
+
+Fri Dec 27 2019 13:57:23 GMT+0700 (Indochina Time)
+ === Error while get material has not been sent! === 
+ {}
+ === End Error while get material has not been sent! ===
+

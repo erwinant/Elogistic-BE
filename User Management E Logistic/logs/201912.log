@@ -1,0 +1,115 @@
+Fri Dec 20 2019 13:48:39 GMT+0700 (Indochina Time)
+ === Error while logout. === 
+ {"name":"SequelizeDatabaseError","parent":{"message":"Incorrect syntax near the keyword 'FROM'.","code":"EREQUEST","number":156,"state":1,"class":15,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"DELET FROM [dbo].[users_login] WHERE user_id = @0 AND application_id = @1","parameters":{"0":"13","1":6}},"original":{"message":"Incorrect syntax near the keyword 'FROM'.","code":"EREQUEST","number":156,"state":1,"class":15,"serverName":"ASGARD","procName":"","lineNumber":1,"sql":"DELET FROM [dbo].[users_login] WHERE user_id = @0 AND application_id = @1","parameters":{"0":"13","1":6}},"sql":"DELET FROM [dbo].[users_login] WHERE user_id = @0 AND application_id = @1","parameters":{"0":"13","1":6}}
+ === End Error while logout. ===
+
+Fri Dec 20 2019 14:22:35 GMT+0700 (Indochina Time)
+ === Error while find user. === 
+ {"name":"SequelizeConnectionError","parent":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"},"original":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"}}
+ === End Error while find user. ===
+
+Mon Dec 23 2019 09:10:24 GMT+0700 (Indochina Time)
+ === Error while find user. === 
+ {"name":"SequelizeConnectionError","parent":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"},"original":{"message":"Failed to connect to asgard:1433 in 15000ms","code":"ETIMEOUT"}}
+ === End Error while find user. ===
+
+Mon Dec 23 2019 10:03:43 GMT+0700 (Indochina Time)
+ === Your account is still logged in on another device. === 
+ []
+ === End Your account is still logged in on another device. ===
+
+Mon Dec 23 2019 10:04:18 GMT+0700 (Indochina Time)
+ === Your account is still logged in on another device. === 
+ []
+ === End Your account is still logged in on another device. ===
+
+Thu Dec 26 2019 09:30:19 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:31:30 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:32:25 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:34:08 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:34:44 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:35:55 GMT+0700 (Indochina Time)
+ === E-mail not registered! === 
+ []
+ === End E-mail not registered! ===
+
+Thu Dec 26 2019 09:52:10 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:52:54 GMT+0700 (Indochina Time)
+ === Error while validate email! === 
+ {}
+ === End Error while validate email! ===
+
+Thu Dec 26 2019 09:53:28 GMT+0700 (Indochina Time)
+ === E-mail not registered! === 
+ []
+ === End E-mail not registered! ===
+
+Thu Dec 26 2019 10:03:10 GMT+0700 (Indochina Time)
+ === Email cannot be empty! === 
+ []
+ === End Email cannot be empty! ===
+
+Thu Dec 26 2019 11:08:47 GMT+0700 (Indochina Time)
+ === Your password is incorrect. === 
+ []
+ === End Your password is incorrect. ===
+
+Thu Dec 26 2019 11:14:01 GMT+0700 (Indochina Time)
+ === Error while get Detail User === 
+ {}
+ === End Error while get Detail User ===
+
+Thu Dec 26 2019 11:15:18 GMT+0700 (Indochina Time)
+ === Error while get Detail User === 
+ {}
+ === End Error while get Detail User ===
+
+Thu Dec 26 2019 11:16:00 GMT+0700 (Indochina Time)
+ === Error while get Detail User === 
+ {}
+ === End Error while get Detail User ===
+
+Thu Dec 26 2019 11:16:46 GMT+0700 (Indochina Time)
+ === Error while get Detail User === 
+ {}
+ === End Error while get Detail User ===
+
+Thu Dec 26 2019 11:20:53 GMT+0700 (Indochina Time)
+ === E-mail not registered! === 
+ []
+ === End E-mail not registered! ===
+
+Thu Dec 26 2019 11:23:51 GMT+0700 (Indochina Time)
+ === Error while change password. === 
+ {}
+ === End Error while change password. ===
+
+Thu Dec 26 2019 11:23:55 GMT+0700 (Indochina Time)
+ === Error while change password. === 
+ {}
+ === End Error while change password. ===
+

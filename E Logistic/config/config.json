@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "e-logistic",
+    "password": "Acset2019",
+    "database": "e_logistic",
+    "host": "asgard",
+    "dialect": "mssql",
+    "operatorsAliases": false,
+    "dialectOptions": {
+      "options": { "requestTimeout": 3600000 }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false,
+    "dialectOptions": {
+      "options": { "requestTimeout": 3600000 }
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false,
+    "dialectOptions": {
+      "options": { "requestTimeout": 3600000 }
+    }
+  }
+}
