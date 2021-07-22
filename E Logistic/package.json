@@ -24,6 +24,6 @@
     "sequelize": "^5.19.0",
     "sequelize-redis-cache": "^2.0.1",
     "tedious": "^6.6.2",
-    "xlsx": "^0.15.1"
+    "xlsx": "^0.17.0"
   }
 }
